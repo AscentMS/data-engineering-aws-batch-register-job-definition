@@ -3,7 +3,11 @@ const core = require('@actions/core');
 const fs = require('fs');
 
 jest.mock('@actions/core');
-jest.mock('fs');
+jest.mock('fs', () => ({
+    promises: {
+        access: jest.fn()
+    }
+}));
 
 const mockBatchRegisterJobDef = jest.fn();
 jest.mock('aws-sdk', () => {
