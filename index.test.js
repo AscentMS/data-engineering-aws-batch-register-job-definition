@@ -4,6 +4,9 @@ const fs = require('fs');
 
 jest.mock('@actions/core');
 jest.mock('fs', () => ({
+    mkdirSync: () => true,
+    existsSync: () => true,
+    appendFileSync: () => true,
     promises: {
         access: jest.fn()
     }
