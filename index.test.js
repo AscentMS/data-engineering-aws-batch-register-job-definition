@@ -1,6 +1,5 @@
 const run = require('.');
 const core = require('@actions/core');
-const fs = require('fs');
 
 jest.mock('@actions/core');
 jest.mock('fs', () => ({
