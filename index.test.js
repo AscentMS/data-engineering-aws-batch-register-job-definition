@@ -36,7 +36,6 @@ describe('Deploy to ECS', () => {
 
         process.env = Object.assign(process.env, { GITHUB_WORKSPACE: __dirname });
 
-        fs.existsSync.mockReturnValue(true);
 
         jest.mock('./job-definition.json', () => ({
             type: 'container',
