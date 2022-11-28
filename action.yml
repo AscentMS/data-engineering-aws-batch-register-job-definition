@@ -15,5 +15,5 @@ outputs:
   revision:
     description: "The revision number of the job definition"
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"
