@@ -1,4 +1,4 @@
-name: 'Amazon Batch "Register Job Definition" Action for GitHub Actions'
+name: '"Register AWS Batch Job Definition" Action for GitHub Actions'
 description: "Registers a job definition in file with AWS Batch"
 branding:
   icon: "cloud"
